@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link href='http://fonts.googleapis.com/css?family=Black+Ops+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+  <title>Wykształcenie</title>
+</head>
+<body>
+
+<nav id="myTopnav"> 
+  <span id="mySpan" onclick="openNav()">   &#9776;  </span> 
+  <span class="desktopSpan"> <a href="aboutme.html">O mnie</a></span>
+  <span class="desktopSpan"> <a href="education.html">Wykształcenie</a></span>
+  <span class="desktopSpan"> <a href="projects.html">Projekty</a></span>
+  <span class="desktopSpan"> <a href="interests.html">Zainteresowania</a></span>
+  <span class="desktopSpan"> <a href="contact.html">Kontakt</a></span>
+  <span id="toIndex">
+    <a href="index.html">Marek Świergoń</a> 
+  </span>
+  <a href="https://www.github.com/Swmar23"> 
+    <picture id="githublogo">
+      <source srcset="images/github-logo.png" media="(min-width: 1000px)">
+      <source srcset="images/github-mark.png">
+      <img src="images/github-mark.png" alt="Flowers">
+    </picture>  
+  </a>
+</nav>
+
+<nav id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="aboutme.html">O mnie</a>
+  <a href="education.html">Wykształcenie</a>
+  <a href="projects.html">Projekty</a>
+  <a href="interests.html">Zainteresowania</a>
+  <a href="contact.html">Kontakt</a>
+</nav>
+
+
+<main>
+  <article>
+    <h3>Wykształcenie</h3>
+    <section class="contact">
+      <h4>Co studiuję i w czym piszę?</h4>
+      <p>Studiuję informatykę algorytmiczną na Politechnice Wrocławskiej. Obecnie jestem na 6 semestrze studiów.</p>
+      <p>Języki, w których najwięcej programowałem: Java (w tym z użyciem Maven), Julia, C++, Python, SQL</p>
+      <p>Pozostałe języki, w których miałem okazję pisać (na poziomie podstawowym): C, HTML, CSS, JavaScript, Prolog, Haskell, Kotlin</p>
+      <p>Ponadto potrafię korzystać z podstawowych funkcjonalności systemów kontroli wersji SVN oraz Git.</p>
+
+    </section>
+    <section class="contact">
+        <h4 id="repozytoria-z-moim-wkładem-w-ramach-studiów">Repozytoria z moim
+        wkładem w ramach studiów</h4>
+        <div style="overflow-x:auto;">
+        <table style="width:100%;">
+        <colgroup>
+        <col style="width: 16%">
+        <col style="width: 16%">
+        <col style="width: 16%">
+        <col style="width: 16%">
+        <col style="width: 16%">
+        <col style="width: 16%">
+        </colgroup>
+        <thead>
+        <tr class="header">
+        <th>Semestr</th>
+        <th>Przedmiot</th>
+        <th>Prowadzący</th>
+        <th>Ocena końcowa</th>
+        <th>Język programowania, narzędzia</th>
+        <th>Link do repozytorium</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td>6</td>
+        <td>Algorytmy Optymalizacji Dyskretnej</td>
+        <td>dr inż. Karol Gotfryd</td>
+        <td>???</td>
+        <td>Julia (JUMP, HiGHS)</td>
+        <td>zostanie opublikowane po zakończeniu kursu</td>
+        </tr>
+        <tr class="even">
+        <td>6</td>
+        <td>Aplikacje Mobilne</td>
+        <td>dr inż. Marcin Zawada</td>
+        <td>???</td>
+        <td>Kotlin (Android Studio), ???</td>
+        <td>zostanie opublikowane po zakończeniu kursu</td>
+        </tr>
+        <tr class="odd">
+        <td>6</td>
+        <td>Nowoczesne technologie WWW</td>
+        <td>dr inż. Anna Lauks-Dutka</td>
+        <td>???</td>
+        <td>HTML5, CSS, JavaScript, SASS</td>
+        <td>zostanie opublikowane po zakończeniu kursu</td>
+        </tr>
+        <tr class="even">
+        <td>6</td>
+        <td>Wprowadzenie do Sztucznej Inteligencji</td>
+        <td>dr Maciej Gębala</td>
+        <td>???</td>
+        <td>???</td>
+        <td>zostanie opublikowane po zakończeniu kursu</td>
+        </tr>
+        <tr class="odd">
+        <td>5</td>
+        <td>Języki Formalne i Techniki Translacji</td>
+        <td>dr Maciej Gębala</td>
+        <td>4.0</td>
+        <td>Python3, SLY</td>
+        <td><a
+        href="https://github.com/Swmar23/JFTT_Kompilator">JFTT_Kompilator</a>
+        (30 miejsce na 66 zgłoszonych kompilatorów)</td>
+        </tr>
+        <tr class="even">
+        <td>5</td>
+        <td>Obliczenia Naukowe</td>
+        <td>prof. dr hab. Paweł Zieliński</td>
+        <td>5.5</td>
+        <td>Julia</td>
+        <td><a
+        href="https://github.com/Swmar23/obliczenia-naukowe">obliczenia-naukowe</a>
+        (metody numeryczne)</td>
+        </tr>
+        <tr class="odd">
+        <td>5</td>
+        <td>Programowanie Funkcyjne</td>
+        <td>prof. dr. hab. Jacek Cichoń</td>
+        <td>4.0</td>
+        <td>Haskell (GHC, GHCi)</td>
+        <td>(TODO)</td>
+        </tr>
+        <tr class="even">
+        <td>5</td>
+        <td>Programowanie Zespołowe</td>
+        <td>dr inż. Przemysław Błaśkiewicz</td>
+        <td>4.5</td>
+        <td>Java</td>
+        <td><a
+        href="https://github.com/progzesp22/frontend">progzesp22/frontend</a>
+        (zespół Frontend)</td>
+        </tr>
+        <tr class="odd">
+        <td>5</td>
+        <td>Środowisko Programisty</td>
+        <td>dr Marcin Kik</td>
+        <td>5.5</td>
+        <td>Shell, SVN, Git</td>
+        <td><a
+        href="https://github.com/Swmar23/srodowisko-programisty">srodowisko-programisty</a></td>
+        </tr>
+        <tr class="even">
+        <td>4</td>
+        <td>Algorytmy i Struktury Danych</td>
+        <td>dr inż. Zbigniew Gołębiewski</td>
+        <td>4.5</td>
+        <td>C/C++</td>
+        <td><a href="https://github.com/Swmar23/AiSD">AiSD</a></td>
+        </tr>
+        <tr class="odd">
+        <td>4</td>
+        <td>Algorytmy Metaheurystyczne</td>
+        <td>prof. dr hab. Wojciech Bożejko</td>
+        <td>5.0</td>
+        <td>Java</td>
+        <td><a
+        href="https://github.com/Dybol/AlgorytmyMeta">Dybol/AlgorytmyMeta</a></td>
+        </tr>
+        <tr class="even">
+        <td>4</td>
+        <td>Kodowanie i Kompresja Danych</td>
+        <td>dr Maciej Gębala</td>
+        <td>5.0</td>
+        <td>C++ (z zewnętrzną biblioteką)</td>
+        <td><a href="https://github.com/Swmar23/KiKD">KiKD</a> (TODO)</td>
+        </tr>
+        <tr class="odd">
+        <td>4</td>
+        <td>Programowanie w Logice</td>
+        <td>dr Przemysław Kobylański</td>
+        <td>5.0</td>
+        <td>Prolog - SWIPL</td>
+        <td><a
+        href="https://github.com/Swmar23/programowanie-w-logice">programowanie-w-logice</a>
+        (TODO)</td>
+        </tr>
+        <tr class="even">
+        <td>4</td>
+        <td>Technologie Sieciowe</td>
+        <td>dr hab. inż. Łukasz Krzywiecki</td>
+        <td>5.0</td>
+        <td>GNS3, Java, podstawowe narzędzia sieciowe w Ubuntu</td>
+        <td><a
+        href="https://github.com/Swmar23/technologie-sieciowe">technologie-sieciowe</a>
+        (TODO)</td>
+        </tr>
+        <tr class="odd">
+        <td>3</td>
+        <td>Technologie Programowania</td>
+        <td>dr inż. Wojciech Macyna</td>
+        <td>5.0</td>
+        <td>Java</td>
+        <td><a
+        href="https://github.com/Krrer-uni/ChineseCheckers">Krrer-uni/ChineseCheckers</a></td>
+        </tr>
+        <tr class="even">
+        <td>3</td>
+        <td>Bazy Danych i Systemy Informacji</td>
+        <td>dr inż. Anna Lauks-Dutka</td>
+        <td>5.5</td>
+        <td>SQL (MySQL)</td>
+        <td>(TODO)</td>
+        </tr>
+        <tr class="odd">
+        <td>3</td>
+        <td>Architektura Komputerów i Systemy Operacyjne</td>
+        <td>dr inż. Marcin Zawada</td>
+        <td>5.0</td>
+        <td>Bash, NASM (assembly), C</td>
+        <td>(TODO)</td>
+        </tr>
+        <tr class="even">
+        <td>2</td>
+        <td>Kurs Programowania</td>
+        <td>dr inż. Wojciech Macyna</td>
+        <td>5.0</td>
+        <td>Java, C++</td>
+        <td>(TODO)</td>
+        </tr>
+        <tr class="odd">
+        <td>1</td>
+        <td>Wstęp do Informatyki i Programowania</td>
+        <td>dr Przemysław Kobylański</td>
+        <td>5.0</td>
+        <td>C</td>
+        <td>(TODO)</td>
+        </tr>
+        </tbody>
+        </table>
+      </div>
+    </section>
+  </article>
+</main>
+
+<footer>  <p>&#169; Marek Świergoń 2023 </p>  <a href="https://jigsaw.w3.org/css-validator/check/referer">
+  <img style="border:0;width:88px;height:31px"
+      src="https://jigsaw.w3.org/css-validator/images/vcss"
+      alt="Valid CSS!">
+</a>
+</footer>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+</body>
+</html> 

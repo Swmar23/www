@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link href='http://fonts.googleapis.com/css?family=Black+Ops+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+  <title>Kontakt</title>
+</head>
+<body>
+
+<nav id="myTopnav"> 
+  <span id="mySpan" onclick="openNav()">   &#9776;  </span> 
+  <span class="desktopSpan"> <a href="aboutme.html">O mnie</a></span>
+  <span class="desktopSpan"> <a href="education.html">Wykształcenie</a></span>
+  <span class="desktopSpan"> <a href="projects.html">Projekty</a></span>
+  <span class="desktopSpan"> <a href="interests.html">Zainteresowania</a></span>
+  <span class="desktopSpan"> <a href="contact.html">Kontakt</a></span>
+  <span id="toIndex">
+    <a href="index.html">Marek Świergoń</a> 
+  </span>
+  <a href="https://www.github.com/Swmar23"> 
+    <picture id="githublogo">
+      <source srcset="images/github-logo.png" media="(min-width: 1000px)">
+      <source srcset="images/github-mark.png">
+      <img src="images/github-mark.png" alt="Flowers">
+    </picture>  
+  </a>
+</nav>
+
+<nav id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="aboutme.html">O mnie</a>
+  <a href="education.html">Wykształcenie</a>
+  <a href="projects.html">Projekty</a>
+  <a href="interests.html">Zainteresowania</a>
+  <a href="contact.html">Kontakt</a>
+</nav>
+
+
+<main>
+  <article>
+    <h3>Kontakt</h3>
+    <section class="contact" >
+      <h5>Mail</h5>
+    </section>
+  </article>
+
+</main>
+
+<footer>  <p>&#169; Marek Świergoń 2023 </p>    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+  <img style="border:0;width:88px;height:31px"
+  src="https://jigsaw.w3.org/css-validator/images/vcss"
+  alt="Valid CSS!" >
+</a>
+</footer>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+</body>
+</html> 

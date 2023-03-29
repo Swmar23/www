@@ -1,0 +1,51 @@
+$topnav-footer-color: #5c9aeb;
+$body-color: #092e5f;
+$sidenav-color: #111;
+$sidenav-link-basecolor: #919191;
+$sidenav-link-hovercolor: #128870;
+$section-color: #9abeee;
+
+$main-font-color: #000;
+$secondary-font-color: #fff;
+
+$topnav-fonts: ('Black Ops One', sans-serif);
+$main-fonts: ('Lato', sans-serif);
+
+$font-sizes-mobile: (
+  'h1': 8vw,
+  'h2': 7vw,
+  'h3': 5vw,
+  'h4': 4vw,
+  'h5': 3.8vw,
+  'p': 3vw,
+  'landing-p': 3.8vw,
+  'p i': 2.9vw,
+  'li': 1.5vw,
+  'sidenav': 25px,
+  'closebtn': 36px,
+  'open-sidenav': 27px,
+  'to-index': 25px,
+  'footer': 1em,
+  'code': 0.8em
+);
+
+$font-sizes-desktop: (
+  'h1': 5em,
+  'h2': 4em,
+  'h3': 3em,
+  'h4': 2em,
+  'h5': 1.5em,
+  'p': 1.25em,
+  'landing-p': 1.5em,
+  'p i': 1.1em,
+  'li': 1.5em,
+  'topnav-small': 20px,
+  'topnav-large': 24px,
+  'code': 1.1em,
+  'to-index-large': 30px
+);
+
+$breakpoints: (
+  desktop-medium: 750px,
+  desktop-large: 900px
+);

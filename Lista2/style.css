@@ -1,0 +1,443 @@
+@charset "UTF-8";
+body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0px;
+  background-color: #092e5f;
+  font-family: "Lato", sans-serif;
+}
+
+footer {
+  background-color: #5c9aeb;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer a {
+  margin-left: auto;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+footer p {
+  margin: 10px;
+}
+footer div#leftSide p {
+  width: 100%;
+  font-size: 1em;
+  text-align: justify;
+}
+
+main {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+article {
+  min-width: 0;
+  height: inherit;
+  width: 90%;
+  margin: 5%;
+}
+@media only screen and (min-width: 750px) {
+  article {
+    margin-top: 50px;
+  }
+}
+
+section {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+h1 {
+  width: 100%;
+  font-size: 8vw;
+  margin: 0;
+}
+@media only screen and (min-width: 750px) {
+  h1 {
+    font-size: 5em;
+  }
+}
+
+h2 {
+  width: 100%;
+  font-size: 7vw;
+  margin: 0;
+}
+@media only screen and (min-width: 750px) {
+  h2 {
+    font-size: 4em;
+  }
+}
+
+h3 {
+  width: 100%;
+  font-size: 5vw;
+  margin: 0;
+}
+@media only screen and (min-width: 750px) {
+  h3 {
+    font-size: 3em;
+  }
+}
+
+h4 {
+  width: 100%;
+  font-size: 4vw;
+  margin: 0px 0px 10px 0px;
+}
+@media only screen and (min-width: 750px) {
+  h4 {
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+}
+
+h5 {
+  width: 100%;
+  font-size: 3.8vw;
+  margin: 0;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 750px) {
+  h5 {
+    font-size: 1.5em;
+  }
+}
+
+p {
+  font-size: 3vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 750px) {
+  p {
+    font-size: 1.25em;
+  }
+}
+p i {
+  font-size: 2.9vw;
+}
+@media only screen and (min-width: 750px) {
+  p i {
+    font-size: 1.1em;
+  }
+}
+
+li {
+  font-size: 1.5vw;
+}
+@media only screen and (min-width: 750px) {
+  li {
+    font-size: 1.5em;
+  }
+}
+
+img#portret {
+  width: 70%;
+  height: auto;
+  max-height: 50%;
+  margin-left: 15%;
+  border-radius: 20%;
+  margin-top: 20%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+@media only screen and (min-width: 750px) {
+  img#portret {
+    width: 25%;
+    height: auto;
+    margin-left: 25%;
+    margin-top: 0%;
+  }
+}
+
+/* FORMATOWANIE PROJEKTÓW */
+pre {
+  margin: 0%;
+  padding: 0;
+  width: auto;
+  min-width: 0%;
+  overflow: auto;
+  max-height: 50vh;
+}
+
+div.codeAndCaption {
+  min-width: 0;
+  width: auto;
+  max-height: 66vh;
+}
+div.codeAndCaption p {
+  margin: 0;
+  text-align: center;
+}
+div.codeAndCaption pre code {
+  font-size: 0.8em;
+}
+@media only screen and (min-width: 750px) {
+  div.codeAndCaption pre code {
+    font-size: 1.1em;
+  }
+}
+
+article.landingArticle {
+  margin-top: 5%;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  min-width: 0;
+  flex-direction: row;
+}
+article.landingArticle p {
+  font-size: 3.8vw;
+  text-align: justify;
+}
+@media only screen and (min-width: 750px) {
+  article.landingArticle {
+    flex-direction: row;
+  }
+  article.landingArticle div#leftSide {
+    width: 50%;
+  }
+  article.landingArticle div#leftSide p {
+    font-size: 1.5em;
+    text-align: justify;
+  }
+}
+
+section.project {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 0;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 5%;
+  color: #000;
+  background-color: #9abeee;
+}
+section.project p {
+  text-align: justify;
+}
+section.project img {
+  width: 100%;
+  height: auto;
+  margin-left: 0;
+  max-width: 500px;
+  max-height: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media only screen and (min-width: 750px) {
+  section.project img {
+    width: 40%;
+    height: auto;
+    margin-left: auto;
+  }
+}
+@media only screen and (min-width: 750px) {
+  section.project div#textBlock {
+    width: 50%;
+  }
+}
+
+section.contact {
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #9abeee;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 5%;
+  color: #000;
+}
+section.contact p {
+  text-align: justify;
+}
+section.contact img {
+  width: 40%;
+  height: auto;
+  float: right;
+  max-width: 500px;
+  max-height: 500px;
+  margin: 5%;
+  margin-top: 0%;
+}
+@media only screen and (min-width: 900px) {
+  section.contact img {
+    width: 20%;
+    height: auto;
+  }
+}
+section.contact img.smallImage {
+  width: 30%;
+  height: auto;
+  max-width: 200px;
+  max-height: 200px;
+  margin: 0% 0% 3% 3%;
+}
+@media only screen and (min-width: 750px) {
+  section.contact img.smallImage {
+    width: 15%;
+    height: auto;
+  }
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #919191;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #128870;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media only screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+}
+#myTopnav > .desktopSpan {
+  justify-self: center;
+  grid-column-start: auto;
+}
+@media only screen and (min-width: 750px) {
+  #myTopnav > .desktopSpan {
+    grid-row-start: 2;
+  }
+}
+
+#myTopnav {
+  margin: 0px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #5c9aeb;
+  position: sticky;
+  top: 0px;
+}
+#myTopnav #mySpan {
+  justify-self: left;
+  margin: 5px;
+  color: #000;
+  font-size: 27px;
+  cursor: pointer;
+}
+@media only screen and (min-width: 750px) {
+  #myTopnav #mySpan {
+    display: none;
+  }
+}
+#myTopnav a {
+  justify-self: right;
+  grid-column-start: auto;
+}
+#myTopnav #toIndex {
+  margin: 5px;
+  text-align: center;
+}
+#myTopnav #toIndex a {
+  font-family: "Black Ops One", sans-serif;
+  text-decoration: none;
+  color: #000;
+  font-size: 25px;
+}
+@media only screen and (min-width: 900px) {
+  #myTopnav #toIndex a {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 750px) {
+  #myTopnav {
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto;
+  }
+  #myTopnav a {
+    grid-row-start: 1;
+    grid-column-start: 5;
+    overflow: visible;
+    white-space: nowrap;
+  }
+  #myTopnav #toIndex {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    overflow: visible;
+  }
+}
+
+.desktopSpan {
+  display: none;
+}
+@media only screen and (min-width: 750px) {
+  .desktopSpan {
+    display: inline;
+    margin: 5px;
+    padding-bottom: 10px;
+  }
+  .desktopSpan a {
+    font-family: "Black Ops One", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    display: inline;
+  }
+  .desktopSpan a:hover {
+    border-bottom: #000 4px solid;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .desktopSpan a {
+    font-size: 24px;
+  }
+}
+
+#githublogo img {
+  width: 30px;
+  height: auto;
+  margin: 5px;
+}
+@media only screen and (min-width: 750px) {
+  #githublogo img {
+    height: 30px;
+    width: auto;
+  }
+}/*# sourceMappingURL=style.css.map */

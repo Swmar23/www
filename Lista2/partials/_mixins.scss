@@ -1,0 +1,22 @@
+//Mixin to get images of specific width and keep aspect ratio
+@mixin size-fit-height($width) {
+  width: $width;
+  height: auto;
+}
+
+//Mixin to get images of specific height and keep aspect ratio
+@mixin size-fit-width($height) {
+  height: $height;
+  width: auto;
+}
+
+//Mixin to generate media queries
+@mixin mq($canvas) {
+  @if map-has-key($map: $breakpoints, $key: $canvas) {
+    @media only screen and (min-width: map-get($breakpoints, $canvas)) {
+      @content; 
+    }
+  } @else {
+    @warn "Unknown key #{$canvas} for map $breakpoints."
+  }
+}

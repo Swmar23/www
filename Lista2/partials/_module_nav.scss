@@ -1,0 +1,142 @@
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $sidenav-color;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+  a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: map-get($map: $font-sizes-mobile, $key: 'sidenav');
+    color: $sidenav-link-basecolor;
+    display: block;
+    transition: 0.3s;
+
+    &:hover {
+      color: $sidenav-link-hovercolor;
+    }
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: map-get($map: $font-sizes-mobile, $key: 'closebtn');
+    margin-left: 50px;
+  }
+}
+
+@media only screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+}
+
+#myTopnav > .desktopSpan {
+  justify-self: center;
+  grid-column-start: auto;
+
+  @include mq(desktop-medium) {
+    grid-row-start: 2;
+  }
+}
+
+#myTopnav {
+	margin: 0px;
+	width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: $topnav-footer-color;
+  position: sticky;
+  top: 0px;
+
+  #mySpan {
+    justify-self: left;
+    margin: 5px;
+    color: $main-font-color;
+    font-size: map-get($map: $font-sizes-mobile, $key: 'open-sidenav');
+    cursor:pointer;
+
+    @include mq(desktop-medium) {
+      display: none;
+    }
+  }
+
+  a {
+    justify-self: right;
+    grid-column-start: auto;
+  }
+
+  #toIndex {
+    margin: 5px;
+    text-align: center;
+    a {
+      font-family: $topnav-fonts;
+      text-decoration: none;
+      color: $main-font-color;
+      font-size: map-get($map: $font-sizes-mobile, $key: 'to-index');
+      
+      @include mq(desktop-large) {
+        font-size: map-get($map: $font-sizes-desktop, $key: 'to-index-large');
+      }
+    }
+  }
+
+  @include mq(desktop-medium) {
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto;
+
+    a {
+      grid-row-start: 1;
+      grid-column-start: 5;
+      overflow: visible;
+      white-space: nowrap;
+    }
+
+    #toIndex {
+      grid-column-start: 3;
+      grid-row-start: 1;
+      overflow: visible;
+    }
+  }
+}
+
+.desktopSpan {
+  display: none;
+
+  @include mq(desktop-medium) {
+    display: inline;
+    margin: 5px;
+    padding-bottom: 10px;
+
+    a {
+      font-family: $topnav-fonts;
+      font-size: map-get($map: $font-sizes-desktop, $key: 'topnav-small');
+      text-decoration: none;
+      color: $main-font-color;
+      display: inline;
+
+      &:hover {
+        border-bottom: #000 4px solid;
+      }
+    }
+  }
+  @include mq(desktop-large) {
+    a {
+      font-size: map-get($map: $font-sizes-desktop, $key: 'topnav-large');
+    }
+  }
+}
+
+#githublogo img {
+  @include size-fit-height(30px);
+  margin: 5px;
+
+  @include mq(desktop-medium) {
+    @include size-fit-width(30px);
+  }
+}
