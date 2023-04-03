@@ -1,5 +1,5 @@
 # www - Nowoczesne Technologie WWW
-Zbiorcze repozytorium rozwiązań zadań z przedmiotu Nowoczesne Technologie WWW, rok akademicki 2022/2023. Kurs prowadzony przez dr. inż. Annę Lauks-Dutka na kierunku Informatyka Algorytmiczna, Wydział Informatyki i Telekomunikacji Politechniki Wrocławskiej.
+Zbiorcze repozytorium rozwiązań zadań z przedmiotu Nowoczesne Technologie WWW, rok akademicki 2022/2023. Kurs prowadzony przez dr inż. Annę Lauks-Dutka na kierunku Informatyka Algorytmiczna, Wydział Informatyki i Telekomunikacji Politechniki Wrocławskiej.
 
 ### Lista 1 
 Zrealizowane poza repozytorium, patrz [strona główna](https://swmar23.github.io)
