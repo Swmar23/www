@@ -1,0 +1,621 @@
+body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0px;
+  background-color: #092e5f;
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #919191;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #128870;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#myTopnav {
+	margin: 0px;
+	width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #5c9aeb;
+  position: sticky;
+  top: 0px;
+}
+
+#myTopnav > * {
+  justify-self: center;
+  grid-column-start: auto;
+}
+
+#myTopnav #mySpan {
+  justify-self: left;
+  margin: 5px;
+  color: #000;
+	font-size:27px;
+  cursor:pointer;
+}
+
+#myTopnav a {
+  justify-self: right;
+  grid-column-start: auto;
+}
+
+
+.desktopSpan {
+  display: none;
+}
+
+#githublogo img {
+  height: 30px;
+  width: 30px;
+  margin: 5px
+}
+
+#toIndex {
+  margin: 5px;
+}
+
+#toIndex a {
+  font-family: 'Black Ops One', sans-serif;
+  text-decoration: none;
+  color: #000;
+  font-size: 25px;
+}
+
+footer {
+  background-color: #5c9aeb;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+footer a {
+  margin-left: auto;
+  margin-right:5px;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+
+footer p {
+  margin: 10px;
+}
+
+main {
+  min-height: 80vh; 
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  color:white;
+}
+
+article {
+  min-width: 0;
+  height: inherit;
+  width: 90%;
+  margin: 5%;
+}
+
+section {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+h1 { 
+  width: 100%;
+  font-size: 3em;
+  margin: 0;
+}
+
+h2 { 
+  width: 100%;
+  font-size: 7vw;
+  margin: 0;
+}
+
+h3 {
+  width: 100%;
+  font-size: 5vw;
+  margin: 0;
+}
+
+h4 {
+  width: 100%;
+  font-size: 4vw;
+  margin: 0px 0px 10px 0px;
+}
+
+h5 {
+  width: 100%;
+  font-size: 3.8vw;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 3vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+p i {
+  font-size: 2.9vw;
+}
+
+li {
+  font-size: 1.5em;
+}
+
+section div#leftSide p {
+  width: 100%;
+  font-size: 1em;
+  text-align: justify;
+}
+
+img#portret {
+  width:70%;
+  margin-left: 15%;
+  border-radius: 20%;
+  margin-top: 20%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: row;
+ justify-content: center;
+ align-items: center;
+}
+
+/* FORMATOWANIE PROJEKTÓW */
+
+pre {
+  margin: 0%;
+  padding: 0;
+  width:auto;
+  min-width: 0%; 
+  overflow: auto;
+  max-height: 50vh;
+}
+
+div.codeAndCaption pre code {
+  font-size: 0.8em;
+}
+
+article.landingArticle {
+  margin-top:5%;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  min-width: 0;
+  flex-direction: row;
+}
+
+article.landingArticle p {
+  text-align: justify;
+}
+
+section.project {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  min-width: 0;
+  flex-direction: row;
+  justify-content: center;
+  margin-top:5%;
+  margin-bottom: 5%;
+  padding:5%;
+  color:#000;
+  background-color: #9abeee;
+}
+
+section.contact {
+  height: fit-content;
+  background-color: #9abeee;
+  margin-top:5%;
+  margin-bottom: 5%;
+  padding:5%;
+  color:#000;  
+}
+
+section.contact p {
+  text-align: justify;
+}
+
+section.project p {
+  text-align: justify;
+}
+
+div.codeAndCaption {
+  min-width: 0;
+  width: auto;
+  /* overflow: auto; */
+  max-height: 66vh;
+}
+
+div.codeAndCaption p {
+  margin: 0;
+  text-align: center;
+}
+
+section.project img {
+  margin-left: 0;
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+section.contact img {
+  float: right;
+  max-width: 500px;
+  max-height: 500px;
+  width: 40%;
+  height: auto;
+  margin: 5%;
+  margin-top: 0%;
+}
+
+section.contact img.smallImage {
+  max-width: 200px;
+  max-height: 200px;
+  width: 30%;
+  height: auto;
+  margin: 0% 0% 3% 3%;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+
+/* DROPDOWN DLA PRZEGLĄDAREK BEZ JS*/
+
+#myTopnav .dropdown {
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  justify-self: left;
+  display: inline-block;
+}
+
+.dropdown > input[type="checkbox"] {
+  position: absolute;
+  left: -100vw;  /*wyrzucamy checkbox poza viewport*/
+}
+
+.dropdown > label,
+.dropdown > a[role="button"] {
+  font-family: 'Black Ops One', sans-serif;
+  font-size: 20px;
+  display: inline-block;
+  padding: 6px 5px;
+  color: #000;
+  /* line-height: 1.5em; */
+  text-decoration: none;
+  border: 1px solid #8c8c8c;
+  cursor: pointer;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.dropdown > label:hover,
+.dropdown > a[role="button"]:hover,
+.dropdown > a[role="button"]:focus {
+  border-color: #333;
+}
+
+.dropdown > label:after,
+.dropdown > a[role="button"]:after {
+  content: "\f0d7";
+  font-family: FontAwesome, sans-serif;
+  display: inline-block;
+  margin-left: 6px;
+}
+
+.dropdown > ul {
+  position: absolute;
+  z-index: 999;
+  display: block;
+  left: -100vw; /*domyślnie poza viewportem na lewo */
+  /* top: calc(1.5em + 14px); */
+  border: 1px solid #8c8c8c;
+  background: #5c9aeb;
+  padding: 6px 0;
+  margin: 0;
+  list-style: none;
+  width: 200%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 3px 8px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 3px 8px rgba(0,0,0,.15);
+  box-shadow: 0 3px 8px rgba(0,0,0,.15);
+}
+
+.dropdown > ul a {
+  font-family: 'Black Ops One', sans-serif;
+  font-size: 15px;
+  display: block;
+  padding: 6px 5px;
+  text-decoration: none;
+  color: #000;
+}
+
+.dropdown > ul a:hover,
+.dropdown > ul a:focus {
+  background: #4273b3;
+}
+
+.dropdown > input[type="checkbox"]:checked ~ ul,
+.dropdown > ul:target {
+  left: 0;
+}
+
+.dropdown > [type="checkbox"]:checked + label:after,
+.dropdown > ul:target ~ a:after {
+  content: "\f0d8";
+}
+
+.dropdown a.close {
+  display: none;
+}
+
+.dropdown > ul:target ~ a.close {
+  display: block;
+  position: absolute;
+  left: 0; /*po kliknięciu pokazujemy */
+  top: 0;
+  height: 100%;
+  width: 100%;
+  text-indent: -100vw;
+  z-index: 1000;
+}
+
+body:not(.js-enabled) #mySpan {
+  display: none;
+}
+
+body.js-enabled #myTopnav .dropdown {
+  display: none;
+}
+
+/* Style do galerii (języki programowania) */
+
+.contact .programming-logos {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template: repeat(3, auto) / repeat(3, auto);
+  width: 100%;
+}
+
+.contact .programming-logos img {
+  width: 12vw;
+}
+
+.contact #logos-header {
+  margin-top: 50px;
+}
+
+
+@media only screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+}
+
+@media (min-width: 750px) {
+  #myTopnav .dropdown {
+    display: none;
+  }
+
+  h1 { 
+    font-size: 5em;
+    margin-bottom: 0;
+  }
+
+  h2 { 
+    font-size: 4em;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    width: 100%;
+    font-size: 3em;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    width: 100%;
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+
+  h5 {
+    width: 100%;
+    font-size: 1.5em;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.25em;
+  }
+
+  p i {
+    font-size: 1.1em;
+  }
+
+  li {
+    font-size: 1.5em;
+  }
+
+  section.project img {
+    margin-left: auto;
+    width: 40%;
+    height: fit-content;
+  }
+
+  section.contact img.smallImage {
+    max-width: 200px;
+    max-height: 200px;
+    width: 15%;
+    height: auto;
+    margin: 0% 0% 3% 3%;
+  }
+
+  
+  article {
+    height: inherit;
+    margin-top: 50px;
+  }
+  
+  article.landingArticle div#leftSide p {
+    font-size: 1.5em;
+    text-align: justify;
+  }
+
+  article.landingArticle div#leftSide {
+    width: 50%;
+  }
+
+  img#portret {
+    width:25%;
+    margin-left: 25%;
+    margin-top: 0%;
+    height: auto;
+  }
+
+  article.landingArticle {
+    flex-direction: row;
+  }
+
+  #mySpan {
+    display: none;
+  }
+
+  .desktopSpan {
+    display: inline;
+    margin: 5px;
+    padding-bottom: 10px;
+  }
+
+  .desktopSpan a:hover {
+    border-bottom: #000 4px solid;
+  }
+
+  .desktopSpan a {
+    font-family: 'Black Ops One', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color:#000;
+    display: inline;
+  }
+
+  #myTopnav {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  #myTopnav > * {
+    grid-column-start: auto;
+    grid-row-start: 2;
+  }
+
+  #myTopnav #toIndex {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    overflow: visible;
+  }
+
+  #githublogo img{
+    height: 30px;
+    width: auto;
+    margin: 5px;
+  }
+
+
+  #myTopnav a {
+    grid-column-start: 5;
+    grid-row-start: 1;
+    justify-self: right;
+    overflow: visible;
+    white-space: nowrap;
+  }
+
+  div.codeAndCaption pre code {
+    font-size: 1.1em;
+  }
+
+  section.project div#textBlock {
+    width:50%;
+  }
+  
+}
+
+@media only screen and (min-width: 900px) {
+  span.desktopSpan a{
+    font-size: 24px;
+  }
+
+  #toIndex a{
+    font-size: 30px;
+  }
+
+  section.contact img {
+    float: right;
+    width: 20%;
+    height: auto;
+    margin: 5%;
+    margin-top: 0%;
+  }
+
+    /* Style do galerii (języki programowania) */
+
+  .contact .programming-logos {
+    display: grid;
+    grid-template: repeat(2, auto) / repeat(5, auto);
+    width: 100%;
+  }
+
+  .contact .programming-logos img {
+    width: 6vw;
+  }
+
+}

@@ -25,3 +25,8 @@ Gra – układanka obrazkowa. Napisana wykorzystaniem canvas w JavaScript. Korzy
 
 Aplikacja webowa do pisania prywatnych notatek z wykorzystaniem Node.js, MongoDB, Bootstrap 5, EJS i autoryzacji OAuth2.0 (logowanie poprzez Google). Zawiera interefejs w architekturze REST, który obsługuje żądania i odpowiedzi HTTP. W ramach niego możliwe jest przeglądanie, dodawanie, edytowanie i usuwanie notatek oraz weryfikacja użytkownika (logowanie i wylogowywanie się).
 
+### Lista 5
+
+Wersja archiwalna strony głównej z wykorzystaniem języka skryptowego PHP do zastosowania zasady DRY poprzez dynamiczne ładowanie powtarzających się fragmentów stron (wyodrębniona sekcja nawigacyjna i stopka). 
+
+Prosty licznik odwiedzin (znajdujący się w stopce). Zapisuje unikatowe adresy IP i łączną liczbę odświeżeń strony.
