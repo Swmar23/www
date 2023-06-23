@@ -1,0 +1,73 @@
+.form-popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.form-popup form {
+  color: black;
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+}
+
+.form-popup h2 {
+  margin-top: 0;
+}
+
+.form-popup input[type=range] {
+  width: 100%;
+}
+
+.form-popup .board-images {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 750px) {
+  .form-popup .board-images {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.form-popup .board-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.selected {
+  border: 10px solid #ff6600;
+}
+
+.form-popup button {
+  margin-top: 10px;
+}
+
+
+div#game {
+  text-align: center;
+}
+
+canvas {
+  margin: auto;
+}
+
+button#reset {
+  margin: auto;
+}
+
+
+button#select {
+  margin: auto;
+}
