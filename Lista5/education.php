@@ -20,7 +20,7 @@
     <h3>Wykształcenie</h3>
     <section class="contact">
       <h4>Co studiuję i w czym piszę?</h4>
-      <p>Studiuję informatykę algorytmiczną na Politechnice Wrocławskiej. Obecnie jestem na 6 semestrze studiów.</p>
+      <p>Studiuję informatykę algorytmiczną na Politechnice Wrocławskiej. Obecnie jestem na 1 semestrze studiów II stopnia.</p>
 
       <h5 id="logos-header">Języki, w których najwięcej programowałem:</h5>
       <div id="lang1" class="programming-logos"></div>
